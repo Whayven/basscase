@@ -35,7 +35,8 @@ main {
     align-items: center;
     background: white;
     text-align: center;
-    width: 40%;
+    width: 298px;
+    border: 1px solid #D8D8D8;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -53,7 +54,41 @@ main {
     border-radius: 20px;
     border: 1px solid #707070;
     height: 32px;
-    width: 241px;
+    width: 200px;
+}
+
+.input-with-icon input[type=text] {
+    padding-left: 40px;
+}
+
+.input-with-icon input[type=password] {
+    padding-left: 40px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon .email-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px 14px;
+}
+
+.input-with-icon .pass-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 4px 14px;
+}
+
+.input-with-icon input[type=text]:focus + img {
+    color: dodgerblue;
+}
+
+.input-with-icon input[type=password]:focus + img {
+    color: dodgerblue;
 }
 
 .fbutton {
